@@ -12,5 +12,5 @@ presenteer(inkomsten, totaal_inkomsten)
 
 with open('boekhouding.csv', 'w',newline='') as csvfile:
     for key, value in inkomsten.items():
-        writer = cvs.writer(csvfile, delimiter=';')
+        writer = csv.writer(csvfile, delimiter=';')
         writer.writerow([key, value])
